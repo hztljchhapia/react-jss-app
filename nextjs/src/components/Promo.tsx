@@ -71,6 +71,7 @@ export const WithText = (props: PromoProps): JSX.Element => {
               </div>
             </div>
             <div className="field-promotext">
+              Test
               <JssRichText className="promo-text" field={props.fields.PromoText2} />
             </div>
           </div>
