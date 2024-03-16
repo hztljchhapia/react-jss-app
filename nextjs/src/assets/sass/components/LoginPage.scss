@@ -1,0 +1,87 @@
+/* Login.css */
+
+.Login {
+    position: relative;
+    /* Needed for stacking context */
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Semi-transparent background */
+    backdrop-filter: blur(10px);
+    /* Apply blur effect */
+    /* Other styles for the form container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Light border */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.Login {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.Login .form-group {
+    margin-bottom: 20px;
+}
+
+.Login label {
+    font-weight: bold;
+}
+
+.Login input[type="email"],
+.Login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.Login button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Login button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.Login .btn-block {
+    display: block;
+    width: 100%;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.google-btn {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
