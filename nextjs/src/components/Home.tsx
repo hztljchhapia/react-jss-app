@@ -20,14 +20,14 @@ type HeaderProps = ComponentProps & {
  * JSS component that's useful.
  */
 const Header = ({ fields }: HeaderProps): JSX.Element => (
-  <div className="main-footer">
+  <>
     <div className="container">
-      <div className="footer">
+      <div className="header">
         <div className="logo">
-          <Image field={fields.Image} id="logo-main" />
+          <Image field={fields.Logo} id="logo-main" />
         </div>
-        <div className="footer-links">
-          <ul className="footer-link">
+        <div>
+          <ul className="header-link">
             {fields?.HeaderLinks &&
               fields?.HeaderLinks?.map((values: any) => {
                 return (
@@ -40,7 +40,7 @@ const Header = ({ fields }: HeaderProps): JSX.Element => (
         </div>
       </div>
     </div>
-  </div>
+  </>
 );
 
 export default withDatasourceCheck()<HeaderProps>(Header);
