@@ -1,11 +1,4 @@
-import {
-  Text,
-  RichText,
-  Field,
-  withDatasourceCheck,
-  Link,
-  Image,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+import { withDatasourceCheck, Link, Image } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 
 type HeaderProps = ComponentProps & {

@@ -1,11 +1,4 @@
-import {
-  Text,
-  RichText,
-  Field,
-  withDatasourceCheck,
-  Link,
-  Image,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+import { Text, withDatasourceCheck, Link } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 
 type HeaderProps = ComponentProps & {
@@ -21,21 +14,21 @@ type HeaderProps = ComponentProps & {
  */
 const Header = ({ fields }: HeaderProps): JSX.Element => (
   <>
-    <div className='home'>
-        <div className='container'>
-          <div className='home-wrapper'>
-            <div className='home-content'>
-              {/* <h3>Welcome..</h3> */}
-              <Text tag="h3" field={fields.Heading} />
-              <Text tag="span" field={fields.Content} />
-              {/* <span className='info-text'>Let’s bring you back to a better place</span> */}
-            </div>
-            <div className='home-link'>
-              <Link field={fields.CTA}/>
-            </div>
+    <div className="home">
+      <div className="container">
+        <div className="home-wrapper">
+          <div className="home-content">
+            {/* <h3>Welcome..</h3> */}
+            <Text tag="h3" field={fields.Heading} />
+            <Text tag="span" field={fields.Content} />
+            {/* <span className='info-text'>Let’s bring you back to a better place</span> */}
+          </div>
+          <div className="home-link">
+            <Link field={fields.CTA} />
           </div>
         </div>
       </div>
+    </div>
   </>
 );
 
