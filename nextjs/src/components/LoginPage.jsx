@@ -10,7 +10,6 @@ import { GoogleOAuthProvider } from '@react-oauth/google';
 // import './LoginPage.css';
 
 export default function Login(prop) {
-    console.log(prop, "------------>prop ka log")
   const [user, setUser] = useState(null);
   // const [profile, setProfile] = useState(null);
 //   const navigate = useNavigate();
@@ -31,7 +30,6 @@ const router=useRouter();
     let pushValue=prop?.fields?.CTALogin?.value?.href;
 
     router.push(pushValue);
-    console.log(pushValue, "------------------>log")
     sessionStorage.setItem('user', JSON.stringify(response));
   };
 
