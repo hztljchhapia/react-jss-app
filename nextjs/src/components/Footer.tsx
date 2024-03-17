@@ -27,7 +27,7 @@ const Header = ({ fields }: HeaderProps): JSX.Element => (
           <Image field={fields.Image} id="logo-main" />
         </div>
         <div className="footer-links">
-          <ul className="footer-link">
+          <ul className="feader-link">
             {fields?.HeaderLinks &&
               fields?.HeaderLinks?.map((values: any) => {
                 return (
