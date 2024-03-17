@@ -39,7 +39,7 @@ export default function Login(prop) {
   };
 
   const validationSchema = Yup.object().shape({
-    email: Yup.string().email('Invalid email').required('Email is required'),
+    email: Yup.string().email('Invalid email').required('Email is require'),
     password: Yup.string().required('Password is required'),
   });
 
