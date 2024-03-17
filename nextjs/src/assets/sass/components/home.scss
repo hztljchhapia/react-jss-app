@@ -1,0 +1,93 @@
+.home {
+  background: url('../../image/polygonal19.jpg');
+  height: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.home-wrapper {
+  left: 15%;
+  top: 30%;
+  position: absolute;
+  text-align: left;
+}
+
+.home-content > h3 {
+  color: white;
+  font-size: 80px;
+}
+
+.home-content > span {
+  color: white;
+  font-size: 40px;
+  margin: 0px;
+}
+
+.home-link {
+  margin: 20px 0px;
+  border-radius: 15px;
+  display: block;
+  padding: 10px;
+  width: fit-content;
+  background-color: #265073;
+}
+
+.home-link > a {
+  color: white;
+  margin: 40px;
+  font-size: 20px;
+  border-radius: 5px;
+  text-decoration-color: transparent;
+  transition: 2s all;
+}
+
+/* Blog component styles */
+.blog {
+  margin-top: 40px;
+}
+
+.blog h2 {
+  font-size: 24px;
+  color: #265073;
+}
+
+.blog ul {
+  list-style: none;
+  padding: 0;
+}
+
+.blog li {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.blog li h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+.blog li p {
+  font-size: 16px;
+  color: #555;
+}
+
+@media only screen and (max-width: 768px) {
+  .home-wrapper {
+    left: 10%; /* Adjust left position for smaller screens */
+    top: 20%;
+  }
+
+  .home-content > h3 {
+    font-size: 60px; /* Reduce font size for smaller screens */
+  }
+
+  .home-content > span {
+    font-size: 30px; /* Reduce font size for smaller screens */
+  }
+
+  .home-link > a {
+    font-size: 20px; /* Reduce font size for smaller screens */
+  }
+}
